@@ -1,0 +1,32 @@
+{
+  "name": "nexmobot",
+  "version": "0.1.0",
+  "description": "A Slack bot offering communications functionality using Nexmo",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "slack",
+    "nexmo",
+    "bot",
+    "phone",
+    "calls",
+    "conferencing",
+    "sms",
+    "communications"
+  ],
+  "author": "Phil Leggetter <phil@leggetter.co.uk> (http://www.leggetter.co.uk/)",
+  "license": "MIT",
+  "engines": {
+    "node": "v7.x"
+  },
+  "dependencies": {
+    "@slack/client": "^3.9.0",
+    "deep-copy": "^1.2.0",
+    "nexmo": "^2.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1"
+  }
+}
