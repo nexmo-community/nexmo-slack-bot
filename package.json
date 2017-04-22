@@ -23,8 +23,11 @@
   },
   "dependencies": {
     "@slack/client": "^3.9.0",
+    "body-parser": "^1.17.1",
     "deep-copy": "^1.2.0",
-    "nexmo": "^2.0.2"
+    "express": "^4.15.2",
+    "nexmo": "^2.0.2",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
     "ava": "^0.19.1"
