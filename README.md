@@ -2,9 +2,20 @@
 
 A Slack bot offering communications functionality using Nexmo
 
+## Prerequisites
+
+* Install and setup the [nexmo-cli](https://github.com/nexmo/nexmo-cli)
+* Get a [Nexmo account](https://dashboard.nexmo.com/sign-up)
+
 ## Install
 
-TODO
+Clone the repo and install dependencies
+
+```
+git clone git@github.com:nexmo-community/nexmo-slack-bot.git
+cd nexmo-slack-bot
+npm install
+```
 
 Create a Nexmo application and take a note of the application ID that is output (referred to as `NEXMO_APP_ID` below)
 
@@ -22,6 +33,30 @@ Link the number to the application you created
 
 ```sh
 nexmo link:app PHONE_NUMBER NEXMO_APP_ID
+```
+
+Create a `.env` file with the following entries
+
+```
+SLACK_BOT_TOKEN=
+SLACK_BOT_PHONE_NUMBERS=PHONE_NUMBER
+NEXMO_API_KEY=
+NEXMO_API_SECRET=
+NEXMO_APP_ID=NEXMO_APP_ID
+```
+
+## Running the Nexmo Slack Bot
+
+Running locally using Heroku toolbelt
+
+```sh
+$ env NEXMO_PRIVATE_KEY="`cat private.local.key`" heroku local
+```
+
+Running locally using foreman
+
+```sh
+$ env NEXMO_PRIVATE_KEY="`cat private.local.key`" foreman start
 ```
 
 ## Usage
@@ -46,21 +81,11 @@ Invite participants by directly providing their phone number
 @nexmobot 14155550123 14155550456
 ```
 
-## Developing
+## Deploying to Heroku
 
-Running locally using Heroku toolbelt
+TODO
 
-```sh
-$ env NEXMO_PRIVATE_KEY="`cat private.local.key`" heroku local
-```
-
-Running locally using foreman
-
-```sh
-$ env NEXMO_PRIVATE_KEY="`cat private.local.key`" foreman start
-```
-
-## Tests
+## Running the Tests
 
 ```sh
 $ ava test/*
