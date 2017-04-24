@@ -79,7 +79,7 @@ Invite a user group
 Invite participants by directly providing their phone number
 
 ```sh
-@nexmobot 14155550123 14155550456
+@nexmobot conference 14155550123 14155550456
 ```
 
 ## Deploying to Heroku
