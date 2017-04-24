@@ -2,6 +2,8 @@
 
 A Slack bot offering communications functionality using Nexmo
 
+![nexmobot example](nexmobot.gif)
+
 ## Prerequisites
 
 * Install and setup the [nexmo-cli](https://github.com/nexmo/nexmo-cli)
