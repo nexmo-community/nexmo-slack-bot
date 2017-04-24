@@ -1,3 +1,4 @@
 node_modules
 private.local.key
+private.heroku.key
 .env
