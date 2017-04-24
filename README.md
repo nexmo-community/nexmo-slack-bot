@@ -65,18 +65,6 @@ $ env NEXMO_PRIVATE_KEY="`cat private.local.key`" foreman start
 
 ### `conference participants`
 
-Invite one or more individual users
-
-```sh
-@nexmobot conference @leggetter @sammachin
-```
-
-Invite a user group
-
-```sh
-@nexmobot conference @devrel
-```
-
 Invite participants by directly providing their phone number
 
 ```sh
