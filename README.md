@@ -70,7 +70,7 @@ $ env NEXMO_PRIVATE_KEY="`cat private.local.key`" foreman start
 Invite participants by directly providing their phone number
 
 ```sh
-@nexmobot conference 14155550123 14155550456
+@nexmobot please create a conference call with 14155550123 and 14155550456
 ```
 
 ## Deploying to Heroku
